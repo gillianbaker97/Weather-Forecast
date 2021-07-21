@@ -63,7 +63,7 @@ var getForecastRepos = function(language) {
         }
       });
     };
-}
+
 
 var displayForecast = function (repos, forecast) {
     if (repos.length === 0) {
@@ -88,9 +88,9 @@ var displayForecast = function (repos, forecast) {
     humidity.appendChild('current.humidity');
 
             }
-        }); */
+        }; 
 
-}                                   
+                                 
 
-searchButton.addEventListener('click', getApi);
+searchButton.addEventListener('click', apiUrl);
 
