@@ -9,20 +9,20 @@ var repoForecast = document.querySelector('.forecast');
 var formSubmitHandler = function(event){
       event.preventDefault();
 
-      var city = searchButton.value.trim();
+      var city = searchButton.value.trim(); /*trims white space from the input button*/
 
       if (city) {
           getUserRepos(city);
         
-          weatherCard.textContent = '';
+          weatherCard.textContent = '';/* asks the weather card to display the correct city once inputted */
 
          } else {
-            alert('Please enter a city name');
+            alert('Please enter a city name'); /* if the city isn't recognized in the repo's we ask for another input*/
          }
   };
 
 var foreCast = function (event) {
-    var forecast = event.target.getAttribute('.forecast');
+    var forecast = event.target.getAttribute('.forecast'); /* gets the forecast for each day of the week */
 
     if (forecast) {
         getFeaturedRepos(forecast);
@@ -38,7 +38,7 @@ var getUserRepos = function (user) {
         .then(function(response){
             if(response.ok){
                 response.json().then(function(data){
-                    displayRepos(data, user);
+                    displayRepos(data);
                 });
             } else {
                 alert('Error:' + response.statusText);
@@ -56,7 +56,7 @@ var getForecastRepos = function(language) {
     fetch(apiUrl).then(function (response) {
         if (response.ok) {
           response.json().then(function (data) {
-            displayRepos(data.items, language);
+            displayRepos(data.items);
           });
         } else {
           alert('Error: ' + response.statusText);
