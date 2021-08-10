@@ -31,56 +31,60 @@
 
     <div class="input-group mb-3">
       <div class="input-group-prepend">
-        <span class="input-group-text" id="inputGroup-sizing-default">Search</span>
+        <span class="input-group-text" id="searchButton">Search</span>
       </div>
-      <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+      <input type="text" class="form-control" id="user-search" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
     </div>
 
     <div class="card" style="width: 18rem">
       <ul class="list-group list-group-flush">
-        <li class="list-group-item weatherInput">search history element</li>
+        <li class="list-group-item weatherInput" id="search-result">search history element</li>
       </ul>
     </div>
 
+
     <div class="card weather-card" style="width: 50rem; height: 15rem; margin-left: 300px;">
       <div class="card-body">
-        <h5 class="card-title">Weather</h5>
-        <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <h5 class="card-title">Current Weather</h5>
+        <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+        <p id="current-temp"></p>
+        <p id="current-humidity"></p>
+        <p id="current-wind"></p>
       </div>
     </div>
     
     <div class="card-deck m-3">
       <div class="card">
         <div class="card-body">
-          <h5 class="card-title">Today</h5>
-          <p class="card-text custom-card1 temp humidity wind forecast">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-body">
           <h5 class="card-title">Tomorrow</h5>
-          <p class="card-text custom-card2 temp humidity wind forecast">This card has supporting text below as a natural lead-in to additional content.</p>
+          <p class="card-text custom-card1">This should display tomorrow's weather.</p>
         </div>
       </div>
       <div class="card">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text custom-card3 temp humidity wind forecast">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+          <h5 class="card-title">Day 2</h5>
+          <p class="card-text custom-card2 temp humidity wind">This card should display the next day's weather.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Day 3</h5>
+          <p class="card-text custom-card3 temp humidity wind">This card should display the next day's weather.</p>
         </div>
       </div>
 
       <div class="card">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text custom-card4 temp humidity wind forecast">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+          <h5 class="card-title">Day 4</h5>
+          <p class="card-text custom-card4 temp humidity wind">This card should display the next day's weather.</p>
         </div>
       </div>
 
       <div class="card">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text custom-card5 temp humidity wind forecast">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+          <h5 class="card-title">Day 5</h5>
+          <p class="card-text custom-card5 temp humidity wind">This card should display the next day's weather.</p>
         </div>
       </div>
 
